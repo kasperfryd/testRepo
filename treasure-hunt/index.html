@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fødselsdags Skattejagten</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" type="module"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="content-wrapper">
+        <div class="container">
+          <div class="icon-container">
+            <svg
+              class="sparkle sparkle-1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 3v18M3 12h18M6.5 6.5l11 11M17.5 6.5l-11 11" />
+            </svg>
+            <svg
+              class="sparkle sparkle-2"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 3v18M3 12h18M6.5 6.5l11 11M17.5 6.5l-11 11" />
+            </svg>
+            <div class="map-icon-circle">
+              <svg
+                class="map-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <svg
+              class="sparkle sparkle-3"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 3v18M3 12h18M6.5 6.5l11 11M17.5 6.5l-11 11" />
+            </svg>
+          </div>
+          <h1 class="title" id="title"></h1>
+          <div class="card" id="clueCard">
+            <div class="clue-section">
+              <div class="badge" id="badge">Your Clue</div>
+              <p class="clue-text" id="clueText"></p>
+            </div>
+            <form class="form" id="answerForm">
+              <div>
+                <input type="text" id="answerInput" placeholder="Enter your answer..." class="input" />
+              </div>
+              <button type="submit" class="button" id="submitButton"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
