@@ -14,22 +14,59 @@ const badge = document.getElementById("badge");
 
 const clues = [
   {
-    clue: "Det første sted vi mødtes?",
-    answer: "susan",
+    clue: `
+    <h3>Ledetråd:</h3>
+    <i>    En efterårsdag i det forrige år, hvor solen på himmelen så flot den står. 
+    <br/>  Blandt buske og træer, søer og svaner, fik to gode folk lidt godt til deres ganer. 
+    <br/>  Der sad de på noget af træ, med udsigt til fugle og kræ. 
+    <br/>  Med kirken til venstre og søen lige fremme, ligger jeg og venter under en træ-ramme.
+    <br/>
+    </i>
+    <br/>
+    <br/>
+    <p>   I en fin lille flaske er jeg gemt, ved et mindested jeg ikke har glemt.
+    <br/> Der ligger en overraskelse til dig. 
+    <br/> Hvis du altså kan finde mig?
+    </p>`,
+    answer: "dansemusen",
     title: "Skattejagten begynder",
-    location: "Vesterbro",
+    location: "57.04473711426327, 9.941844200336886",
   },
   {
-    clue: "Det første sted vi spiste sammen i solen?",
-    answer: "anlægget",
-    title: "",
-    location: "Østre Anlæg",
+    clue: `
+    <h3>Ledetråd:</h3>
+    <i>    En sensommer dag hvor fuglene sang, mødtes de to for første gang. 
+    <br/>  En kold i øl i solen var den bedste menu, når to gode folk søger hjerte ly. 
+    <br/>  Der fandt de hinanden, de skulle ses igen, for den dag fandt de begge en hjerte ven.
+    <br/>. Bag denne cafe ligger jeg og venter og håber du snarest mig henter.
+    </i>
+    <br/>
+    <br/>
+    <p>   I en fin lille flaske er jeg gemt, ved et mindested jeg ikke har glemt.
+    <br/> Der ligger en overraskelse til dig. 
+    <br/> Hvis du altså kan finde mig?
+    </p>`,
+    answer: "springålen",
+    title: "Eventyret fortsætter",
+    location: "57.048979086168195, 9.91583864897912",
   },
   {
-    clue: "Det sted vi spiste sammen i kulden",
-    answer: "skanseparken",
-    title: "",
-    location: "Skanseparken",
+    clue: `
+    <h3>Ledetråd:</h3>
+    <i>    En vinterdag hvor sneen dækkede landet, fik de en idé der ikke lignede alt andet. 
+    <br/>  Med trangia i sækken og vadende ben, besteg de fluks et bjerg uden sten. 
+    <br/>  Der lavede de mad i de hyggeligste kår, en skøn begyndelse på det nye år.
+    <br/>  Find mig tæt derpå ved en affaldsspand, hvis ikke jeg er blevet taget af en skraldemand.
+    </i>
+    <br/>
+    <br/>
+    <p>   I en fin lille flaske er jeg gemt, ved et mindested jeg ikke har glemt.
+    <br/> Der ligger en overraskelse til dig. 
+    <br/> Hvis du altså kan finde mig?
+    </p>`,
+    answer: "babysælen",
+    title: "Den store finale",
+    location: "57.062756008414034, 9.927630464759659",
   },
 ];
 
@@ -82,7 +119,7 @@ function handleWrongAnswer() {
 // Optional: Update clue dynamically
 function updateClue(newClue, newAnswer) {
   badge.textContent = `location`;
-  clueText.textContent = `"${newClue}"`;
+  clueText.innerHTML = newClue;
   submitButton.textContent = "Indtast svar";
   title.textContent = clues[currentClueIndex].title;
   badge.textContent = clues[currentClueIndex].location;
@@ -91,7 +128,7 @@ function updateClue(newClue, newAnswer) {
 }
 
 function winGame() {
-  clueText.textContent = `"Tillykke! Hvor er du god! Du har fundet alle mindestederne og løst fødselsdags skattejagten. Jeg glæder mig til at skulle på eventyr med dig - De kærligste hilsner. Din Kasper"`;
+  clueText.innerHTML = `<h3>Tillykke!</h3> <p>Hvor er du god! Du har fundet alle mindestederne og løst fødselsdags skattejagten.<br/> Jeg glæder mig til at skulle på eventyr med dig <br/> De kærligste hilsner <br/> Din Kasper"`;
   badge.textContent = `Færdig`;
   submitButton.setAttribute("disabled", true);
   answerForm.style.display = "none";
