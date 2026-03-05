@@ -19,7 +19,7 @@ const clues = [
     <i>    En efterårsdag i det forrige år, hvor solen på himmelen så flot den står. 
     <br/>  Blandt buske og træer, søer og svaner, fik to gode folk lidt godt til deres ganer. 
     <br/>  Der sad de på noget af træ, med udsigt til fugle og kræ. 
-    <br/>  Med kirken til venstre og søen lige fremme, ligger jeg og venter under en træ-ramme.
+    <br/>  Bag tre symbolske og store sten, der finder du noget ved træets ben.
     <br/>
     </i>
     <br/>
@@ -38,7 +38,7 @@ const clues = [
     <i>    En sensommer dag hvor fuglene sang, mødtes de to for første gang. 
     <br/>  En kold i øl i solen var den bedste menu, når to gode folk søger hjerte ly. 
     <br/>  Der fandt de hinanden, de skulle ses igen, for den dag fandt de begge en hjerte ven.
-    <br/>. Bag denne cafe ligger jeg og venter og håber du snarest mig henter.
+    <br/>. Bag denne cafe skal du kigge dig for, måske jeg er gemt under et potte skår.
     </i>
     <br/>
     <br/>
@@ -56,7 +56,7 @@ const clues = [
     <i>    En vinterdag hvor sneen dækkede landet, fik de en idé der ikke lignede alt andet. 
     <br/>  Med trangia i sækken og vadende ben, besteg de fluks et bjerg uden sten. 
     <br/>  Der lavede de mad i de hyggeligste kår, en skøn begyndelse på det nye år.
-    <br/>  Find mig tæt derpå ved en affaldsspand, hvis ikke jeg er blevet taget af en skraldemand.
+    <br/>  Et træ blandt mange er kæmpestor, ved foden af dette findes et nøgleord.
     </i>
     <br/>
     <br/>
